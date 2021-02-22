@@ -9,14 +9,11 @@
 # Notice that I in the .bashrc auto-sets default section on start. Yeah, that's good.
 # Therefore my default PS1 colour is 32, green, and not 31, red.
 
-# 1. Update to something like this in your ~/.bashrc file
-# GAM=$HOME/bin/gamadv-xtd3/gam
+# 1. Add something like this at the bottom of your ~/.bashrc file
+# GAM=$HOME/gamadv-xtd3/gam
 # $GAM select default save
-# GAMSECTION=$($GAM config verify | grep -oP '(?<=domain = )[^ ]*')
-# if [ "$color_prompt" = yes ]; then
+# GAMSECTION=$($GAM config verify | grep -oP '(?<=Section: )[^ ]*')
 # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]:\[\033[01;32m\][$GAMSECTION]\[\033[00m\]\$ '
-# else
-# PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\ $GAMSECTION $ '
 
 # 2. Set this file as an alias based on where you saved the file; I keep mine in ~/bin. The source bit is important.
 # alias gamselect='source $HOME/bin/gamselect.sh'
